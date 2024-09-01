@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.activeLink {
+  @apply text-theme-blue py-3 bg-theme-light-white ltr:rounded-l-full rtl:rounded-r-full;
+}
