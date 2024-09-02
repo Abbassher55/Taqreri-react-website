@@ -11,6 +11,8 @@ export default {
         "theme-green": "#03625F",
         "theme-light-white": "#EEF5FF",
         "theme-cream": "#F1EEE9",
+        "section-light-blue": "#c5dff84d",
+        "title-light": "#91c8e433",
       },
     },
   },

@@ -17,7 +17,7 @@ const Navbar = ({ navbarToggler }) => {
 
   return (
     <nav
-      className={`${!navbarToggler ? "hidden" : ""} w-full flex-col rounded-3xl bg-theme-blue py-3 text-white md:w-4/12 lg:relative lg:flex lg:w-2/12`}
+      className={`${!navbarToggler ? "hidden" : ""} h-fit w-full flex-col rounded-3xl bg-theme-blue py-3 text-white md:w-4/12 md:py-8 lg:relative lg:flex lg:w-2/12`}
     >
       <button
         onClick={openForm}
@@ -65,10 +65,13 @@ const Navbar = ({ navbarToggler }) => {
               className="mx-auto mt-1 block w-full rounded-full bg-white p-2 text-theme-blue shadow-lg"
             />
           </div>
-          <div>
-            <label htmlFor="password" className="capitalize text-theme-blue">
-              {content.password}:
-            </label>
+          <div className="text-end">
+            <a
+              href="#"
+              className="text-xs font-bold capitalize text-theme-blue"
+            >
+              {content.forgot_password}
+            </a>
           </div>
           <div>
             <button className="mx-auto flex items-center gap-x-1 rounded-full bg-theme-yellow px-5 py-1 text-xl font-bold text-theme-blue transition-all duration-150 hover:bg-theme-light-white">
