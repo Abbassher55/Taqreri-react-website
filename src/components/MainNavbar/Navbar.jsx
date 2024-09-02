@@ -16,7 +16,7 @@ const Navbar = () => {
     location.pathname === "/" || location.pathname === "/home";
 
   return (
-    <nav className="flex w-full flex-col rounded-3xl bg-theme-blue py-3 text-white md:w-2/12">
+    <nav className="flex w-full flex-col rounded-3xl bg-theme-blue py-3 text-white md:w-4/12 lg:w-2/12">
       <button
         onClick={openForm}
         className="mx-auto flex items-center gap-x-1 rounded-full bg-theme-light-white px-5 py-1 text-xl font-bold text-theme-blue transition-all duration-150 hover:bg-theme-yellow"
@@ -40,7 +40,7 @@ const Navbar = () => {
         <span>{content.login}</span>
       </button>
       <div
-        className={`login-form bg-theme-cream mt-3 p-6 ${showForm ? "block" : "hidden"}`}
+        className={`login-form mt-3 bg-theme-cream p-6 ${showForm ? "block" : "hidden"}`}
       >
         <form action="" className="space-y-4">
           <div>

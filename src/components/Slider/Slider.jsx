@@ -1,23 +1,38 @@
+import React, { useContext, useState, useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
+import "swiper/css/navigation";
 
 // Import the modules directly from 'swiper'
 import { Pagination, Autoplay } from "swiper/modules";
+import { LanguageContext } from "../../lang/LanguageContext";
+import SliderContent from "./SliderContent";
 
 export default function Slider() {
+  const { language } = useContext(LanguageContext);
+  const [isRtl, setIsRtl] = useState(false);
+
+  useEffect(() => {
+    setIsRtl(language === "ar");
+  }, [language]);
+
   return (
     <Swiper
-      pagination={{ clickable: true }} // Add pagination with clickable bullets
-      autoplay={{ delay: 3000 }} // Autoplay with 3 seconds delay
+      key={isRtl ? "rtl" : "ltr"} // Force re-render when direction changes
+      pagination={{ clickable: true }}
+      autoplay={{ delay: 5500 }}
       loop={true}
-      modules={[Pagination, Autoplay]} // Include the necessary modules
-      className="mySwiper w-20" // Add a class for custom styling if needed
+      modules={[Pagination, Autoplay]}
+      className="mySwiper w-full md:h-[28rem]"
+      dir={isRtl ? "rtl" : "ltr"} // Set direction based on state
     >
-      <SwiperSlide>Slide 1</SwiperSlide>
-      <SwiperSlide>Slide 2</SwiperSlide>
-      <SwiperSlide>Slide 3</SwiperSlide>
-      <SwiperSlide>Slide 4</SwiperSlide>
+      <SwiperSlide>
+        <SliderContent />
+      </SwiperSlide>
+      <SwiperSlide>
+        <SliderContent />
+      </SwiperSlide>
     </Swiper>
   );
 }

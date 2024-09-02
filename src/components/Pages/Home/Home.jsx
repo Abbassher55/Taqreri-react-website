@@ -6,7 +6,7 @@ const Home = () => {
   const { content } = useContext(LanguageContext);
 
   return (
-    <div>
+    <div className="md:w-8/12 lg:w-10/12">
       <Slider />
     </div>
   );

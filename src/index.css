@@ -3,5 +3,8 @@
 @tailwind utilities;
 
 .activeLink {
-  @apply text-theme-blue py-3 bg-theme-light-white ltr:rounded-l-full rtl:rounded-r-full;
+  @apply bg-theme-light-white py-3 text-theme-blue ltr:rounded-l-full rtl:rounded-r-full;
+}
+.swiper-pagination {
+  top: 95% !important;
 }
