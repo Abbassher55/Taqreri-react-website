@@ -3,5 +3,12 @@
 @tailwind utilities;
 
 .activeLink {
-  @apply text-theme-blue py-3 bg-theme-light-white ltr:rounded-l-full rtl:rounded-r-full;
+  @apply bg-theme-light-white py-3 text-theme-blue ltr:rounded-l-full rtl:rounded-r-full;
+}
+
+.swiper-pagination-bullet {
+  @apply bg-theme-yellow opacity-100 !important;
+}
+.swiper-pagination-bullet-active {
+  @apply bg-theme-blue !important;
 }

@@ -1,8 +1,12 @@
 import logo from "../assets/imgs/taqreri-logo.png";
-const TopBar = () => {
+import menu from "../assets/imgs/menu.png";
+const TopBar = ({ togglerFunction }) => {
   return (
-    <div className="hidden justify-end rounded-2xl bg-theme-yellow bg-opacity-25 p-3 lg:flex">
-      <img src={logo} className="h-14" alt="Taqreri logo" />
+    <div className="flex items-center justify-between rounded-2xl bg-theme-yellow bg-opacity-25 p-3 lg:justify-end">
+      <span onClick={togglerFunction} className="hover:cursor-pointer">
+        <img src={menu} className="block h-6 w-6 lg:hidden" alt="Manu icon" />
+      </span>
+      <img src={logo} className="h-12 lg:h-14" alt="Taqreri logo" />
     </div>
   );
 };

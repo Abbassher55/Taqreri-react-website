@@ -4,7 +4,7 @@ import React, { useContext, useState } from "react";
 import LanguageToggle from "./LanguageToggle";
 import { LanguageContext } from "../../lang/LanguageContext";
 
-const Navbar = () => {
+const Navbar = ({ navbarToggler }) => {
   const { content } = useContext(LanguageContext);
   const location = useLocation();
   const [showForm, setShowForm] = useState(false);
@@ -16,7 +16,9 @@ const Navbar = () => {
     location.pathname === "/" || location.pathname === "/home";
 
   return (
-    <nav className="flex w-full flex-col rounded-3xl bg-theme-blue py-3 text-white md:w-4/12 lg:w-2/12">
+    <nav
+      className={`${navbarToggler ? "hidden" : ""} w-full flex-col rounded-3xl bg-theme-blue py-3 text-white md:w-4/12 lg:flex lg:w-2/12`}
+    >
       <button
         onClick={openForm}
         className="mx-auto flex items-center gap-x-1 rounded-full bg-theme-light-white px-5 py-1 text-xl font-bold text-theme-blue transition-all duration-150 hover:bg-theme-yellow"

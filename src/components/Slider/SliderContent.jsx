@@ -5,7 +5,7 @@ import { LanguageContext } from "../../lang/LanguageContext";
 export default function SliderContent() {
   const { content } = useContext(LanguageContext);
   return (
-    <div className="relative h-48 md:h-[26rem]">
+    <div className="relative h-28 md:h-[26rem]">
       <img
         src={sliderImage}
         className="absolute bottom-0 w-full"
