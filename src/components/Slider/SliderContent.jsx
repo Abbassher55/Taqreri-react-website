@@ -11,7 +11,7 @@ export default function SliderContent() {
         className="absolute bottom-0 w-full"
         alt="Slider"
       />
-      <button className="absolute bottom-0 right-1 w-2/12 rounded-2xl bg-theme-blue px-3 py-4 text-lg font-bold text-white">
+      <button className="absolute bottom-0 right-0 rounded-md bg-theme-blue p-2 text-xs font-bold text-white md:right-1 md:w-2/12 md:rounded-2xl md:px-3 md:py-4 md:text-lg">
         {content.start_now}
       </button>
     </div>

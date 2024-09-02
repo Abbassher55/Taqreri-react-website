@@ -17,7 +17,7 @@ const Navbar = ({ navbarToggler }) => {
 
   return (
     <nav
-      className={`${navbarToggler ? "hidden" : ""} w-full flex-col rounded-3xl bg-theme-blue py-3 text-white md:w-4/12 lg:flex lg:w-2/12`}
+      className={`${!navbarToggler ? "hidden" : ""} w-full flex-col rounded-3xl bg-theme-blue py-3 text-white md:w-4/12 lg:relative lg:flex lg:w-2/12`}
     >
       <button
         onClick={openForm}
@@ -42,7 +42,7 @@ const Navbar = ({ navbarToggler }) => {
         <span>{content.login}</span>
       </button>
       <div
-        className={`login-form mt-3 bg-theme-cream p-6 ${showForm ? "block" : "hidden"}`}
+        className={`login-form relative mt-4 bg-theme-cream p-6 before:absolute before:-top-2 before:left-1/2 before:size-4 before:-translate-x-1/2 before:rotate-45 before:bg-theme-cream ${showForm ? "block" : "hidden"}`}
       >
         <form action="" className="space-y-4">
           <div>
@@ -52,7 +52,7 @@ const Navbar = ({ navbarToggler }) => {
             <input
               type="email"
               id="email"
-              className="mx-auto mt-1 block w-full rounded-full bg-white p-2 shadow-lg"
+              className="mx-auto mt-1 block w-full rounded-full bg-white p-2 text-theme-blue shadow-lg"
             />
           </div>
           <div>
@@ -62,7 +62,7 @@ const Navbar = ({ navbarToggler }) => {
             <input
               type="password"
               id="password"
-              className="mx-auto mt-1 block w-full rounded-full bg-white p-2 shadow-lg"
+              className="mx-auto mt-1 block w-full rounded-full bg-white p-2 text-theme-blue shadow-lg"
             />
           </div>
           <div>

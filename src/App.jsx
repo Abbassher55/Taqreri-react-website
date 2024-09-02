@@ -11,7 +11,7 @@ import Pricing from "./components/Pages/Pricing/Pricing";
 import Contact from "./components/Pages/Contact/Contact";
 
 const App = () => {
-  const [openNavbar, setNavbar] = useState(true);
+  const [openNavbar, setNavbar] = useState(false);
   function toggleNavbar() {
     setNavbar(!openNavbar);
   }
