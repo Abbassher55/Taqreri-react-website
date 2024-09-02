@@ -11,6 +11,7 @@ const en = {
   email: "Email",
   password: "Password",
   start_now: "Start now",
+  about_us: "About us",
 
   welcomeMessage: "Welcome to our website",
   introText: "This is an example of a multi-language website.",

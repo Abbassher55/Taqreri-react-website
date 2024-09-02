@@ -4,11 +4,7 @@ import { LanguageContext } from "../../../lang/LanguageContext";
 const Modules = () => {
   const { content } = useContext(LanguageContext);
 
-  return (
-    <div className="md:w-2/3 w-full">
-      <h1>{content.modules}</h1>
-    </div>
-  );
+  return <h1>{content.modules}</h1>;
 };
 
 export default Modules;

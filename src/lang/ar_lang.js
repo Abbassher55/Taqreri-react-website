@@ -11,6 +11,7 @@ const ar = {
   email: "Email Ar",
   password: "Password Ar",
   start_now: "Start now Ar",
+  about_us: "About us Ar",
 
   welcomeMessage: "مرحبا بكم في موقعنا",
   introText: "هذا مثال على موقع متعدد اللغات.",

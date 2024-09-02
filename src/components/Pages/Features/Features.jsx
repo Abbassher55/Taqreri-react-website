@@ -4,12 +4,7 @@ import { LanguageContext } from "../../../lang/LanguageContext";
 const Featues = () => {
   const { content } = useContext(LanguageContext);
 
-  return (
-    <div className="md:w-2/3 w-full">
-      <h1>{content.introText}</h1>
-      <p>asdas</p>
-    </div>
-  );
+  return <h1>{content.introText}</h1>;
 };
 
 export default Featues;

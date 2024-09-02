@@ -1,10 +1,10 @@
 import React, { useContext } from "react";
 import { LanguageContext } from "../../../lang/LanguageContext";
-import Slider from "../../Slider/Slider";
 
-const Home = () => {
+const AboutUs = () => {
   const { content } = useContext(LanguageContext);
-  return <Slider />;
+
+  return <h1>{content.about_us}</h1>;
 };
 
-export default Home;
+export default AboutUs;
