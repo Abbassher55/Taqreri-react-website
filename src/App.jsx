@@ -8,7 +8,7 @@ import { LanguageProvider } from "./lang/LanguageContext";
 const App = () => {
   return (
     <LanguageProvider>
-      <Router>
+      <Router basename="/Taqreri-react-website">
         <div className="container flex flex-col gap-3 p-3 md:flex-row">
           <Navbar />
           <Routes>
