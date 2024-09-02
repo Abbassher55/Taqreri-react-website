@@ -10,6 +10,7 @@ const ar = {
   login: "Login Ar",
   email: "Email Ar",
   password: "Password Ar",
+  start_now: "Start now Ar",
 
   welcomeMessage: "مرحبا بكم في موقعنا",
   introText: "هذا مثال على موقع متعدد اللغات.",

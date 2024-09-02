@@ -10,6 +10,7 @@ const en = {
   login: "Login",
   email: "Email",
   password: "Password",
+  start_now: "Start now",
 
   welcomeMessage: "Welcome to our website",
   introText: "This is an example of a multi-language website.",

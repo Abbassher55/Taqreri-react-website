@@ -9,7 +9,7 @@ const App = () => {
   return (
     <LanguageProvider>
       <Router>
-        <div className="container p-3 gap-3 flex md:flex-row flex-col">
+        <div className="container flex flex-col gap-3 p-3 md:flex-row">
           <Navbar />
           <Routes>
             <Route path="/" element={<Home />} />
