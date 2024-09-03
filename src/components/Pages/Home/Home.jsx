@@ -5,6 +5,7 @@ import IntegratedProducts from "./IntegratedProducts";
 import { whyTaqreri, integratedSelling } from "./data.js";
 import WhyTaqreri from "./WhyTaqreri.jsx";
 import EffectiveMethods from "./EffectiveMethods.jsx";
+import LogoSection from "./LogoSection.jsx";
 
 const Home = () => {
   return (
@@ -14,6 +15,7 @@ const Home = () => {
       <IntegratedSelling threeCardsArray={integratedSelling} />
       <IntegratedProducts />
       <EffectiveMethods />
+      <LogoSection />
     </>
   );
 };
