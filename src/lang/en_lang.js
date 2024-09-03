@@ -23,6 +23,8 @@ const en = {
   contact_with: "Contact With",
   official_sponsor: "Official Sponsor",
   footer_rights: "All rights reserved to",
+  fetures_desc:
+    "Taqreri is a simple, efficient, and secure business software that helps you manage your business effectively. It integrates Accounts, HR, Inventory Management, and CRM into one platform. We have designed the interface to be user-friendly and the features customizable.",
 
   welcomeMessage: "Welcome to our website",
   introText: "This is an example of a multi-language website.",

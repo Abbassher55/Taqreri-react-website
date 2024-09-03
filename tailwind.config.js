@@ -7,6 +7,7 @@ export default {
     extend: {
       colors: {
         "menu-blue": "#1B4166",
+        "half-blue": "#799FC3",
         "theme-blue": "#094C70",
         "theme-yellow": "#FFC000",
         "theme-green": "#03625F",

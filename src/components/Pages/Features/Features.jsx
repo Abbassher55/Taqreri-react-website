@@ -1,10 +1,17 @@
 import React, { useContext } from "react";
 import { LanguageContext } from "../../../lang/LanguageContext";
-
-const Featues = () => {
+import contactHeader from "../../../assets/imgs/contact-header.png";
+import PagesHeader from "../PagesHeader";
+const Features = () => {
   const { content } = useContext(LanguageContext);
 
-  return <h1>{content.introText}</h1>;
+  return (
+    <PagesHeader
+      title={content.features}
+      description={content.fetures_desc}
+      image={contactHeader}
+    />
+  );
 };
 
-export default Featues;
+export default Features;
