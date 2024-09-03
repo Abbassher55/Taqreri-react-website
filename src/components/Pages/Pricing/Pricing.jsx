@@ -1,9 +1,17 @@
 import React, { useContext } from "react";
 import { LanguageContext } from "../../../lang/LanguageContext";
-
+import pricingHeader from "../../../assets/imgs/pricing-header-img.png";
+import PagesHeader from "../PagesHeader";
 const Pricing = () => {
   const { content } = useContext(LanguageContext);
-  return <h1>{content.pricing}</h1>;
+
+  return (
+    <PagesHeader
+      title={content.pricing}
+      description={content.pricing_desc}
+      image={pricingHeader}
+    />
+  );
 };
 
 export default Pricing;

@@ -1,10 +1,17 @@
 import React, { useContext } from "react";
 import { LanguageContext } from "../../../lang/LanguageContext";
-
+import aboutUsHeader from "../../../assets/imgs/about-us-header.png";
+import PagesHeader from "../PagesHeader";
 const AboutUs = () => {
   const { content } = useContext(LanguageContext);
 
-  return <h1>{content.about_us}</h1>;
+  return (
+    <PagesHeader
+      title={content.about_us}
+      description={content.about_us_desc}
+      image={aboutUsHeader}
+    />
+  );
 };
 
 export default AboutUs;

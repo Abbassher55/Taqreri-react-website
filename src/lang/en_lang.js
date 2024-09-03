@@ -25,6 +25,14 @@ const en = {
   footer_rights: "All rights reserved to",
   fetures_desc:
     "Taqreri is a simple, efficient, and secure business software that helps you manage your business effectively. It integrates Accounts, HR, Inventory Management, and CRM into one platform. We have designed the interface to be user-friendly and the features customizable.",
+  modules_desc:
+    "Taqreri is a simple, efficient, and secure business software that helps you manage your business effectively. It integrates Accounts, HR, Inventory Management, and CRM into one platform. We have designed the interface to be user-friendly and the features customizable.",
+  pricing_desc:
+    "We offer various packages that cater to your business needs. Select the appropriate package that suits the size and objectives of your business It is equipped with electronic invoicing system and has been approved by the Zakat, Tax, and Customs Authority.",
+  about_us_desc:
+    "We aim to advance the commercial sector in all aspects, overcome obstacles that hinder progress, reach a wide range of customers, and contribute to this country's development.",
+  contact_desc:
+    "We are always here to assist you. If you require any help or have any questions, please do not hesitate to contact us.",
 
   welcomeMessage: "Welcome to our website",
   introText: "This is an example of a multi-language website.",
