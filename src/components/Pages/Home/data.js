@@ -7,6 +7,12 @@ import accounting from "../../../assets/imgs/accounting.png";
 import integratedPos from "../../../assets/imgs/integrated-item-1.png";
 import integratedMenu from "../../../assets/imgs/integrated-item-2.png";
 import kds from "../../../assets/imgs/integrated-item-3.png";
+import restaurants from "../../../assets/imgs/restaurant.png";
+import cafes from "../../../assets/imgs/cafes.png";
+import supplies from "../../../assets/imgs/supplies.png";
+import stores from "../../../assets/imgs/stores.png";
+import giftShops from "../../../assets/imgs/gift-shops.png";
+import carServices from "../../../assets/imgs/car-services.png";
 
 export const whyTaqreri = [
   {
@@ -52,37 +58,75 @@ export const integratedItems = [
   {
     key: "integratedPos",
     img: integratedPos,
-    titleAr: "نقاط البيع",
-    titleEn: "POS",
+    titleAr: "نقطة البيع",
+    titleEn: "Point of sale",
   },
   {
     key: "integratedMenu",
     img: integratedMenu,
-    titleAr: "فواتير",
-    titleEn: "Bills",
+    titleAr: "قائمة طعام",
+    titleEn: "Menu",
   },
   {
     key: "kds",
     img: kds,
-    titleAr: "محاسبة",
-    titleEn: "Accounting",
+    titleAr: "نظام عرض المطبخ",
+    titleEn: "Kitchen Display System",
   },
   {
     key: "integratedPos2",
     img: integratedPos,
-    titleAr: "نقاط البيع",
-    titleEn: "POS",
+    titleAr: "نقطة البيع",
+    titleEn: "Point Of Sale",
   },
   {
     key: "integratedMenu2",
     img: integratedMenu,
-    titleAr: "فواتير",
-    titleEn: "Bills",
+    titleAr: "قائمة طعام",
+    titleEn: "Menu",
   },
   {
     key: "kds2",
     img: kds,
-    titleAr: "محاسبة",
-    titleEn: "Accounting",
+    titleAr: "نظام عرض المطبخ",
+    titleEn: "Kitchen Display System",
+  },
+];
+export const effectiveCardsContent = [
+  {
+    key: "supplies",
+    img: supplies,
+    titleAr: "لوازم",
+    titleEn: "Supplies",
+  },
+  {
+    key: "restaurants",
+    img: restaurants,
+    titleAr: "مطاعم",
+    titleEn: "Restaurants",
+  },
+  {
+    key: "cafes",
+    img: cafes,
+    titleAr: "المقاهي",
+    titleEn: "Cafes",
+  },
+  {
+    key: "stores",
+    img: stores,
+    titleAr: "متاجر",
+    titleEn: "Stores",
+  },
+  {
+    key: "giftShops",
+    img: giftShops,
+    titleAr: "محلات بيع الهدايا",
+    titleEn: "Gift shops",
+  },
+  {
+    key: "carServices",
+    img: carServices,
+    titleAr: "خدمات السيارات",
+    titleEn: "Car Services",
   },
 ];

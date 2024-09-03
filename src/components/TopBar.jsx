@@ -2,7 +2,7 @@ import logo from "../assets/imgs/taqreri-logo.png";
 import menu from "../assets/imgs/menu.png";
 const TopBar = ({ togglerFunction }) => {
   return (
-    <div className="flex items-center justify-between rounded-2xl bg-theme-yellow bg-opacity-25 p-3 lg:justify-end">
+    <div className="flex items-center justify-between bg-theme-yellow bg-opacity-25 p-3 md:rounded-2xl lg:justify-end">
       <span onClick={togglerFunction} className="hover:cursor-pointer">
         <img src={menu} className="block h-6 w-6 lg:hidden" alt="Manu icon" />
       </span>

@@ -1,4 +1,5 @@
 const en = {
+  taqreri: "Taqreri",
   home: "Home",
   about: "About",
   services: "Services",
@@ -16,6 +17,12 @@ const en = {
   integrated_selling: "Integrated selling system",
   integrated_products_title: "Integrated Taqreri Products",
   effective_methods: "Effective methods for various sectors",
+  your_message: "your message",
+  start_your_success_with_taqreri: "Start your success with Taqreri",
+  type_your_message: "Type your message",
+  contact_with: "Contact With",
+  official_sponsor: "Official Sponsor",
+  footer_rights: "All rights reserved to",
 
   welcomeMessage: "Welcome to our website",
   introText: "This is an example of a multi-language website.",

@@ -5,7 +5,9 @@
 .activeLink {
   @apply bg-theme-light-white py-3 text-theme-blue ltr:rounded-l-full rtl:rounded-r-full;
 }
-
+.gradient-blue-to-black {
+  @apply bg-gradient-to-l from-[#094C70] to-[#636569] rtl:bg-gradient-to-r;
+}
 .swiper-pagination-bullet {
   @apply bg-theme-yellow opacity-100;
 }

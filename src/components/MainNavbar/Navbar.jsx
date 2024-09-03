@@ -17,7 +17,7 @@ const Navbar = ({ navbarToggler }) => {
 
   return (
     <nav
-      className={`${!navbarToggler ? "hidden" : ""} h-fit w-full flex-col rounded-3xl bg-theme-blue py-3 text-white md:py-8 lg:relative lg:flex lg:w-2/12`}
+      className={`${!navbarToggler ? "hidden" : ""} bg-menu-blue h-fit w-full flex-col rounded-3xl py-3 text-white md:py-8 lg:relative lg:flex lg:w-2/12`}
     >
       <button
         onClick={openForm}

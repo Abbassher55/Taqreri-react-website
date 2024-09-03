@@ -1,4 +1,5 @@
 const ar = {
+  taqreri: "تقريري",
   home: "الرئيسية",
   about: "عن",
   services: "خدمات",
@@ -16,6 +17,12 @@ const ar = {
   integrated_selling: "نظام بيع متكامل",
   integrated_products_title: "منتجات تقري المتكاملة",
   effective_methods: "أساليب فعالة لمختلف القطاعات",
+  your_message: "your message Ar",
+  start_your_success_with_taqreri: "Start your success with Taqreri Ar",
+  type_your_message: "Type your message Ar",
+  contact_with: "Contact With Ar",
+  official_sponsor: "Official Sponsor Ar",
+  footer_rights: "جميع الحقوق محفوظة",
 
   welcomeMessage: "مرحبا بكم في موقعنا",
   introText: "هذا مثال على موقع متعدد اللغات.",

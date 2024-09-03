@@ -9,6 +9,7 @@ import TopBar from "./components/TopBar";
 import AboutUs from "./components/Pages/AboutUs/AboutUs";
 import Pricing from "./components/Pages/Pricing/Pricing";
 import Contact from "./components/Pages/Contact/Contact";
+import Footer from "./components/Footer";
 
 const App = () => {
   const [openNavbar, setNavbar] = useState(false);
@@ -18,7 +19,7 @@ const App = () => {
   return (
     <LanguageProvider>
       <Router basename="/Taqreri-react-website">
-        <div className="container flex flex-col gap-3 p-0 md:p-2 lg:flex-row lg:p-3">
+        <div className="container flex flex-col gap-3 p-0 pb-0 md:px-2 md:pt-2 lg:flex-row lg:px-3 lg:pt-3">
           <div className="block lg:hidden">
             <TopBar togglerFunction={toggleNavbar} />
           </div>
@@ -36,6 +37,7 @@ const App = () => {
               <Route path="/pricing" element={<Pricing />} />
               <Route path="/contact" element={<Contact />} />
             </Routes>
+            <Footer />
           </div>
         </div>
       </Router>
