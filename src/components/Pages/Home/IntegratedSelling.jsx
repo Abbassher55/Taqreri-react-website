@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import { LanguageContext } from "../../../lang/LanguageContext";
 import ThreeCards from "./ThreeCards";
 import integratedImg from "../../../assets/imgs/integrated-section.png";
-export default function IntegratedSection({ threeCardsArray }) {
+export default function IntegratedSelling({ threeCardsArray }) {
   const { content } = useContext(LanguageContext);
   return (
     <section className="container my-4 rounded-xl bg-section-light-blue md:my-2">

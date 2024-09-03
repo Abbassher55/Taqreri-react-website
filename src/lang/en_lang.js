@@ -14,6 +14,8 @@ const en = {
   forgot_password: "Forgot password ?",
   why_taqreri: "Why should you choose Taqreri?",
   integrated_selling: "Integrated selling system",
+  integrated_products_title: "Integrated Taqreri Products",
+  effective_methods: "Effective methods for various sectors",
 
   welcomeMessage: "Welcome to our website",
   introText: "This is an example of a multi-language website.",

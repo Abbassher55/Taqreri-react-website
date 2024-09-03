@@ -14,6 +14,8 @@ const ar = {
   forgot_password: "هل نسيت كلمة السر؟",
   why_taqreri: "لماذا يجب عليك اختيار التقريري؟",
   integrated_selling: "نظام بيع متكامل",
+  integrated_products_title: "منتجات تقري المتكاملة",
+  effective_methods: "أساليب فعالة لمختلف القطاعات",
 
   welcomeMessage: "مرحبا بكم في موقعنا",
   introText: "هذا مثال على موقع متعدد اللغات.",
