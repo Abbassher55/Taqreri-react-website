@@ -18,12 +18,12 @@ const App = () => {
   return (
     <LanguageProvider>
       <Router basename="/Taqreri-react-website">
-        <div className="container flex flex-col gap-3 p-3 lg:flex-row">
+        <div className="container flex flex-col gap-3 p-0 md:p-2 lg:flex-row lg:p-3">
           <div className="block lg:hidden">
             <TopBar togglerFunction={toggleNavbar} />
           </div>
           <Navbar navbarToggler={openNavbar} />
-          <div className="md:w-8/12 lg:w-10/12">
+          <div className="lg:w-10/12">
             <div className="hidden lg:block">
               <TopBar />
             </div>

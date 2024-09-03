@@ -20,10 +20,10 @@ export default function Slider() {
     <Swiper
       key={isRtl ? "rtl" : "ltr"}
       pagination={{ clickable: true }}
-      autoplay={{ delay: 5500 }}
+      autoplay={{ delay: 10000 }}
       loop={true}
       modules={[Pagination, Autoplay]}
-      className="mySwiper w-full md:h-[28rem]"
+      className="mySwiper w-full lg:h-[28rem]"
       dir={isRtl ? "rtl" : "ltr"}
     >
       <SwiperSlide>

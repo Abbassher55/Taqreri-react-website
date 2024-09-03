@@ -5,11 +5,17 @@ const LanguageToggle = () => {
   const { language, toggleLanguage } = useContext(LanguageContext);
 
   return (
-    <div className="flex mx-auto w-fit bg-theme-light-white rounded-full">
-      <button onClick={() => toggleLanguage("en")} className={`px-5 py-1 capitalize text-theme-blue ${language === "en" ? "ltr:bg-theme-yellow rounded-full" : ""}`}>
+    <div className="mx-auto flex w-fit rounded-full bg-theme-light-white">
+      <button
+        onClick={() => toggleLanguage("en")}
+        className={`px-5 py-1 capitalize text-theme-blue ${language === "en" ? "rounded-full font-bold ltr:bg-theme-yellow" : ""}`}
+      >
         En
       </button>
-      <button onClick={() => toggleLanguage("ar")} className={`px-4 py-1 capitalize  text-theme-blue ${language === "ar" ? "rtl:bg-theme-yellow rounded-full" : ""}`}>
+      <button
+        onClick={() => toggleLanguage("ar")}
+        className={`px-4 py-1 capitalize text-theme-blue ${language === "ar" ? "rounded-full font-bold rtl:bg-theme-yellow" : ""}`}
+      >
         عربي
       </button>
     </div>

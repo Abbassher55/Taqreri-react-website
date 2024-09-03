@@ -17,7 +17,7 @@ const Navbar = ({ navbarToggler }) => {
 
   return (
     <nav
-      className={`${!navbarToggler ? "hidden" : ""} h-fit w-full flex-col rounded-3xl bg-theme-blue py-3 text-white md:w-4/12 md:py-8 lg:relative lg:flex lg:w-2/12`}
+      className={`${!navbarToggler ? "hidden" : ""} h-fit w-full flex-col rounded-3xl bg-theme-blue py-3 text-white md:py-8 lg:relative lg:flex lg:w-2/12`}
     >
       <button
         onClick={openForm}
@@ -52,7 +52,7 @@ const Navbar = ({ navbarToggler }) => {
             <input
               type="email"
               id="email"
-              className="mx-auto mt-1 block w-full rounded-full bg-white p-2 text-theme-blue shadow-lg"
+              className="mx-auto mt-1 block w-full rounded-full bg-white p-2 text-theme-blue shadow-lg focus:border focus:border-theme-blue focus:shadow-xl focus:outline-none"
             />
           </div>
           <div>
@@ -62,7 +62,7 @@ const Navbar = ({ navbarToggler }) => {
             <input
               type="password"
               id="password"
-              className="mx-auto mt-1 block w-full rounded-full bg-white p-2 text-theme-blue shadow-lg"
+              className="mx-auto mt-1 block w-full rounded-full bg-white p-2 text-theme-blue shadow-lg focus:border focus:border-theme-blue focus:shadow-xl focus:outline-none"
             />
           </div>
           <div className="text-end">

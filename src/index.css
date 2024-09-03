@@ -7,8 +7,11 @@
 }
 
 .swiper-pagination-bullet {
-  @apply bg-theme-yellow opacity-100 !important;
+  @apply bg-theme-yellow opacity-100;
 }
 .swiper-pagination-bullet-active {
-  @apply bg-theme-blue !important;
+  @apply bg-theme-blue;
+}
+.-rotateY-180:where([dir="rtl"], [dir="rtl"] *) {
+  transform: rotateY(-180deg);
 }

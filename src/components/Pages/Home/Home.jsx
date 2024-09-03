@@ -4,13 +4,14 @@ import Slider from "../../Slider/Slider";
 import TitleSection from "./TitleSection";
 import IntegratedSection from "./IntegratedSection";
 import { whyTaqreri, integratedSelling } from "./data.js";
+import WhyTaqreri from "./WhyTaqreri.jsx";
 
 const Home = () => {
   const { content } = useContext(LanguageContext);
   return (
     <>
       <Slider />
-      <TitleSection threeCardsArray={whyTaqreri} />
+      <WhyTaqreri threeCardsArray={whyTaqreri} />
       <IntegratedSection threeCardsArray={integratedSelling} />
     </>
   );
