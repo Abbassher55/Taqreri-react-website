@@ -6,6 +6,8 @@ import { FeaturesAccordionItems } from "../../data";
 import AccordionItems from "../../Accordions/AccordionItems";
 import Section from "../Section";
 import TabComponent from "../../TabComponent";
+import { tabs } from "../../data";
+
 const Features = () => {
   const { content } = useContext(LanguageContext);
 
@@ -17,10 +19,10 @@ const Features = () => {
         image={contactHeader}
       />
       <Section>
-        <TabComponent />
+        <TabComponent tabs={tabs} />
       </Section>
       <Section>
-        <AccordionItems accordionItems={FeaturesAccordionItems} />
+        <AccordionItems accordionItems={FeaturesAccordionItems} tabs={tabs} />
       </Section>
     </>
   );

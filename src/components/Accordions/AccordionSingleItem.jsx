@@ -1,5 +1,6 @@
 import React, { useContext } from "react";
 import { LanguageContext } from "../../lang/LanguageContext";
+
 const AccordionSingleItem = ({
   titleEn,
   titleAr,
@@ -10,6 +11,8 @@ const AccordionSingleItem = ({
   accordionImg,
   isFirst,
   isLast,
+  innerContent,
+  children,
 }) => {
   const { language } = useContext(LanguageContext);
 
@@ -40,12 +43,13 @@ const AccordionSingleItem = ({
         </span>
       </button>
       <div
-        className={`overflow-hidden rounded-3xl ${isOpen ? "-mt-14 max-h-screen pt-14 transition-[max-height] duration-300 ease-in-out" : "max-h-0"}`}
+        className={`overflow-hidden rounded-3xl ${isOpen ? "-mt-14 max-h-screen pt-14 transition-[max-height] duration-300 ease-in-out" : "max-h-0"} `}
       >
         <div
           className={`${isLast ? "" : "mb-4"} rounded-3xl bg-half-blue bg-opacity-75 p-8 pb-4 text-xl text-white ${isOpen ? "-mt-14 max-h-screen pt-14 transition-[max-height] duration-300 ease-in-out" : "max-h-0"}`}
         >
-          {language === "en" ? descEn : descAr}
+          {/* Conditionally render description or children */}
+          {innerContent ? (language === "en" ? descEn : descAr) : children}
         </div>
       </div>
       <div
@@ -64,4 +68,5 @@ const AccordionSingleItem = ({
     </div>
   );
 };
+
 export default AccordionSingleItem;

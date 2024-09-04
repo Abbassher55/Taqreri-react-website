@@ -137,15 +137,17 @@ export const FeaturesAccordionItems = [
     titleEn: "Technical Support 24/7",
     titleAr: "Technical Support 24/7 Ar",
     accordionImg: featureImg1,
-    descEn: "This is the content of the first accordion item.",
-    descAr: "This is the content of the first accordion item. Ar",
+    descEn: "Technical Support 24/7.",
+    descAr: "Technical Support 24/7. Ar",
+    haveDesc: true,
   },
   {
     titleEn: "Technical Support",
     titleAr: "Technical Support Ar",
     accordionImg: techSupportIcon,
-    descEn: "This is the content of the first accordion item.",
-    descAr: "This is the content of the first accordion item. Ar",
+    descEn: "Technical Support",
+    descAr: "Technical Support Ar",
+    haveDesc: true,
   },
   {
     titleEn: "Auto backup",
@@ -155,5 +157,44 @@ export const FeaturesAccordionItems = [
       "Taqreri offers an automatic backup feature that securely stores all your data on our servers. This ensures that your information and operations are always protected, and can be easily retrieved whenever you need them.",
     descAr:
       "Taqreri offers an automatic backup feature that securely stores all your data on our servers. This ensures that your information and operations are always protected, and can be easily retrieved whenever you need them.Ar",
+    haveDesc: true,
   },
+];
+export const ModulesAccordionItems = [
+  {
+    titleEn: "Sales & marketing",
+    titleAr: "Sales & marketing Ar",
+    accordionImg: featureImg1,
+    descEn: "This is the content of the first accordion item.",
+    descAr: "This is the content of the first accordion item. Ar",
+    haveDesc: true,
+  },
+  {
+    titleEn: "Purchases & inventory",
+    titleAr: "Technical Support Ar",
+    accordionImg: techSupportIcon,
+    descEn: "This is the content of the first accordion item.",
+    descAr: "This is the content of the first accordion item. Ar",
+    haveDesc: false,
+  },
+  {
+    titleEn: "Auto backup",
+    titleAr: "Auto backup Ar",
+    accordionImg: backupIcon,
+    descEn:
+      "Taqreri offers an automatic backup feature that securely stores all your data on our servers. This ensures that your information and operations are always protected, and can be easily retrieved whenever you need them.",
+    descAr:
+      "Taqreri offers an automatic backup feature that securely stores all your data on our servers. This ensures that your information and operations are always protected, and can be easily retrieved whenever you need them.Ar",
+    haveDesc: true,
+  },
+];
+export const tabs = [
+  { label: "invoices", content: "Content for Tab invoices" },
+  {
+    label: "Purchases",
+    content: "Purchasing Management - Supplier Management",
+  },
+  { label: "Tab 3", content: "Content for Tab 3" },
+  { label: "Tab 4", content: "Content for Tab 4" },
+  { label: "Tab 5", content: "Content for Tab 5" },
 ];
