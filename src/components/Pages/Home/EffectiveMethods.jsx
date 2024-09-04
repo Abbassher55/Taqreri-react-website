@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { LanguageContext } from "../../../lang/LanguageContext";
 import TitleSection from "./TitleSection";
-import { effectiveCardsContent } from "./data";
+import { effectiveCardsContent } from "../../data.js";
 const EffectiveMethods = () => {
   const { language } = useContext(LanguageContext);
   const { content } = useContext(LanguageContext);

@@ -18,6 +18,11 @@ export default {
         "footer-input": "#CACCCF",
       },
     },
+    variants: {
+      extend: {
+        backgroundImage: ["before"],
+      },
+    },
   },
   plugins: [tailwindRtl],
 };
