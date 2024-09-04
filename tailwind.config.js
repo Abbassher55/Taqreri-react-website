@@ -5,6 +5,16 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      container: {
+        center: true,
+        padding: {
+          lg: "4rem",
+          md: "3rem",
+        },
+      },
+      fontFamily: {
+        tawajal: ["Tawajal", "sans-serif"],
+      },
       colors: {
         "menu-blue": "#1B4166",
         "half-blue": "#799FC3",
