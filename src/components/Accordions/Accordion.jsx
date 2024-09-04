@@ -8,7 +8,7 @@ const Accordion = ({ items }) => {
   };
 
   return (
-    <div className="mx-auto w-3/5">
+    <div className="ms-auto w-4/5 md:mx-auto md:w-3/5">
       {items.map((item, index) => (
         <AccordionSingleItem
           key={index}

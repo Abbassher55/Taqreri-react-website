@@ -17,7 +17,7 @@ const AccordionSingleItem = ({
     <div className="relative my-0 border-gray-200 py-0">
       <button
         onClick={onClick}
-        className={`relative z-10 flex w-full items-center justify-between rounded-full bg-white px-6 py-4 text-2xl font-bold text-theme-blue hover:bg-gray-100 hover:text-opacity-75 ${isOpen ? "" : "mb-4"}`}
+        className={`relative z-10 flex w-full items-center justify-between rounded-full bg-white px-6 py-3 text-sm font-bold text-theme-blue hover:bg-gray-100 hover:text-opacity-75 md:py-4 md:text-2xl ${isLast ? "" : "mb-4"}`}
       >
         <span>{language === "en" ? titleEn : titleAr}</span>
         <span
@@ -40,21 +40,25 @@ const AccordionSingleItem = ({
         </span>
       </button>
       <div
-        className={`overflow-hidden rounded-3xl ${isOpen ? "-mt-12 max-h-screen pt-14 transition-[max-height] duration-300 ease-in-out" : "max-h-0"}`}
+        className={`overflow-hidden rounded-3xl ${isOpen ? "-mt-14 max-h-screen pt-14 transition-[max-height] duration-300 ease-in-out" : "max-h-0"}`}
       >
         <div
-          className={`mb-4 rounded-3xl bg-half-blue bg-opacity-75 p-8 pb-4 text-xl text-white ${isOpen ? "-mt-12 max-h-screen pt-14 transition-[max-height] duration-300 ease-in-out" : "max-h-0"}`}
+          className={`${isLast ? "" : "mb-4"} rounded-3xl bg-half-blue bg-opacity-75 p-8 pb-4 text-xl text-white ${isOpen ? "-mt-14 max-h-screen pt-14 transition-[max-height] duration-300 ease-in-out" : "max-h-0"}`}
         >
           {language === "en" ? descEn : descAr}
         </div>
       </div>
       <div
-        className={`absolute top-0 h-full ${isFirst ? "rounded-t-3xl" : ""} ${isLast ? "rounded-b-3xl" : ""} ${isLast && !isOpen ? "h-auto" : ""} max-md:bg-white ltr:-left-24 rtl:-right-24`}
+        className={`absolute top-0 h-full ${isFirst ? "rounded-t-3xl" : ""} ${isLast ? "rounded-b-3xl" : ""} ${isLast && !isOpen ? "h-auto" : ""} max-md:bg-white ltr:-left-16 ltr:md:-left-24 rtl:-right-16 rtl:md:-right-24`}
       >
         <div
           className={`${isOpen ? "bg-theme-yellow" : "bg-theme-blue"} rounded-full p-2`}
         >
-          <img src={accordionImg} className="size-10" alt="Accordion image" />
+          <img
+            src={accordionImg}
+            className="size-8 md:size-10"
+            alt="Accordion image"
+          />
         </div>
       </div>
     </div>
