@@ -23,7 +23,7 @@ const App = () => {
           <div className="block lg:hidden">
             <TopBar togglerFunction={toggleNavbar} />
           </div>
-          <Navbar navbarToggler={openNavbar} />
+          <Navbar navbarToggler={openNavbar} setNavbar={setNavbar} />
           <div className="lg:w-10/12">
             <div className="hidden lg:block">
               <TopBar />

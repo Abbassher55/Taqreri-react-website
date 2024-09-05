@@ -4,7 +4,7 @@ import React, { useContext, useState } from "react";
 import LanguageToggle from "./LanguageToggle";
 import { LanguageContext } from "../../lang/LanguageContext";
 
-const Navbar = ({ navbarToggler }) => {
+const Navbar = ({ navbarToggler, setNavbar }) => {
   const { content } = useContext(LanguageContext);
   const location = useLocation();
   const [showForm, setShowForm] = useState(false);
@@ -12,12 +12,17 @@ const Navbar = ({ navbarToggler }) => {
   function openForm() {
     setShowForm(!showForm);
   }
+  function closeNavbarOnMobile() {
+    if (window.innerWidth < 992) {
+      setNavbar(false);
+    }
+  }
   const isHomeActive =
     location.pathname === "/" || location.pathname === "/home";
 
   return (
     <nav
-      className={`${!navbarToggler ? "hidden" : ""} bg-menu-blue h-fit w-full flex-col rounded-3xl py-3 text-white md:py-8 lg:relative lg:flex lg:w-2/12`}
+      className={`${!navbarToggler ? "hidden" : ""} h-fit w-full flex-col rounded-3xl bg-menu-blue py-3 text-white md:py-8 lg:relative lg:flex lg:w-2/12`}
     >
       <button
         onClick={openForm}
@@ -86,6 +91,7 @@ const Navbar = ({ navbarToggler }) => {
           <li className="w-full">
             <NavLink
               to="/home"
+              onClick={closeNavbarOnMobile}
               className={`flex items-center gap-x-4 px-6 text-xl font-bold ${isHomeActive ? "activeLink" : ""}`}
             >
               <span>
@@ -113,6 +119,7 @@ const Navbar = ({ navbarToggler }) => {
               className={({ isActive }) =>
                 `flex items-center gap-x-4 px-6 text-xl font-bold ${isActive ? "activeLink" : ""}`
               }
+              onClick={closeNavbarOnMobile}
             >
               <span>
                 <svg
@@ -139,6 +146,7 @@ const Navbar = ({ navbarToggler }) => {
               className={({ isActive }) =>
                 `flex items-center gap-x-4 px-6 text-xl font-bold ${isActive ? "activeLink" : ""}`
               }
+              onClick={closeNavbarOnMobile}
             >
               <span>
                 <svg
@@ -161,6 +169,7 @@ const Navbar = ({ navbarToggler }) => {
           </li>
           <li className="">
             <NavLink
+              onClick={closeNavbarOnMobile}
               to="/pricing"
               className={({ isActive }) =>
                 `flex items-center gap-x-4 px-6 text-xl font-bold ${isActive ? "activeLink" : ""}`
@@ -187,6 +196,7 @@ const Navbar = ({ navbarToggler }) => {
           </li>
           <li className="">
             <NavLink
+              onClick={closeNavbarOnMobile}
               to="/about_us"
               className={({ isActive }) =>
                 `flex items-center gap-x-4 px-6 text-xl font-bold ${isActive ? "activeLink" : ""}`
@@ -213,6 +223,7 @@ const Navbar = ({ navbarToggler }) => {
           </li>
           <li className="">
             <NavLink
+              onClick={closeNavbarOnMobile}
               to="/contact"
               className={({ isActive }) =>
                 `flex items-center gap-x-4 px-6 text-xl font-bold ${isActive ? "activeLink" : ""}`
