@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import { useState } from "react";
 import Navbar from "./components/MainNavbar/Navbar";
 import Home from "./components/Pages/Home/Home";
@@ -18,7 +18,7 @@ const App = () => {
   }
   return (
     <LanguageProvider>
-      <Router basename="/Taqreri-react-website">
+      <Router>
         <div className="container flex flex-col gap-3 p-0 pb-0 md:px-2 md:pt-2 lg:flex-row lg:px-3 lg:pt-3">
           <div className="block lg:hidden">
             <TopBar togglerFunction={toggleNavbar} />
