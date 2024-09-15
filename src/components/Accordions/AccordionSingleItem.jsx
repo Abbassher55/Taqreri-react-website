@@ -46,7 +46,7 @@ const AccordionSingleItem = ({
         className={`overflow-hidden rounded-3xl ${isOpen ? "-mt-14 max-h-screen pt-14 transition-[max-height] duration-300 ease-in-out" : "max-h-0"} `}
       >
         <div
-          className={`${isLast ? "" : "mb-4"} rounded-3xl bg-half-blue bg-opacity-75 p-8 pb-4 text-xl text-white ${isOpen ? "-mt-14 max-h-screen pt-14 transition-[max-height] duration-300 ease-in-out" : "max-h-0"}`}
+          className={`mb-4 ${isLast ? "-mt-12" : "-mt-14"} rounded-3xl bg-half-blue bg-opacity-75 p-8 pb-4 text-xl text-white ${isOpen ? "max-h-screen pt-14 transition-[max-height] duration-300 ease-in-out" : "max-h-0"}`}
         >
           {/* Conditionally render description or children */}
           {innerContent ? (language === "en" ? descEn : descAr) : children}
