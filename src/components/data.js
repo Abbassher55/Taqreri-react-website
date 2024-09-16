@@ -161,6 +161,38 @@ export const FeaturesAccordionItems = [
     haveDesc: true,
   },
 ];
+export const AboutUsAccordionItems = [
+  {
+    titleEn: "Quality",
+    titleAr: "Quality Ar",
+    accordionImg: featureImg1,
+    descEn:
+      "In our opinion, success of the product is defined by its quality. Therefore, we strive to be the best in our field.",
+    descAr:
+      "In our opinion, success of the product is defined by its quality. Therefore, we strive to be the best in our field. Ar",
+    haveDesc: true,
+  },
+  {
+    titleEn: "Experience",
+    titleAr: "Experience Ar",
+    accordionImg: techSupportIcon,
+    descEn:
+      "In our opinion, success of the product is defined by its quality. Therefore, we strive to be the best in our field.",
+    descAr:
+      "In our opinion, success of the product is defined by its quality. Therefore, we strive to be the best in our field. Ar",
+    haveDesc: true,
+  },
+  {
+    titleEn: "Customer Satisfaction",
+    titleAr: "Customer Satisfaction Ar",
+    accordionImg: techSupportIcon,
+    descEn:
+      "In our opinion, success of the product is defined by its quality. Therefore, we strive to be the best in our field.",
+    descAr:
+      "In our opinion, success of the product is defined by its quality. Therefore, we strive to be the best in our field. Ar",
+    haveDesc: true,
+  },
+];
 export const ModulesAccordionItems = [
   {
     titleEn: "Sales & marketing",
@@ -172,15 +204,25 @@ export const ModulesAccordionItems = [
   },
   {
     titleEn: "Purchases & inventory",
-    titleAr: "Technical Support Ar",
+    titleAr: "Purchases & inventory Ar",
     accordionImg: techSupportIcon,
     descEn: "This is the content of the first accordion item.",
     descAr: "This is the content of the first accordion item. Ar",
     haveDesc: false,
   },
   {
-    titleEn: "Auto backup",
-    titleAr: "Auto backup Ar",
+    titleEn: "Financial Accounting",
+    titleAr: "Financial Accounting Ar",
+    accordionImg: backupIcon,
+    descEn:
+      "Taqreri offers an automatic backup feature that securely stores all your data on our servers. This ensures that your information and operations are always protected, and can be easily retrieved whenever you need them.",
+    descAr:
+      "Taqreri offers an automatic backup feature that securely stores all your data on our servers. This ensures that your information and operations are always protected, and can be easily retrieved whenever you need them.Ar",
+    haveDesc: true,
+  },
+  {
+    titleEn: "Human Resources",
+    titleAr: "Human Resources Ar",
     accordionImg: backupIcon,
     descEn:
       "Taqreri offers an automatic backup feature that securely stores all your data on our servers. This ensures that your information and operations are always protected, and can be easily retrieved whenever you need them.",
@@ -227,6 +269,7 @@ export const tabs = {
       img: purchasesTabImg,
     },
   ],
+
   modules_tabs: [
     {
       labelEn: "Inventory",
@@ -262,6 +305,43 @@ export const tabs = {
         "Inventory With our platform, you can easily manage and create multiple warehouses, as well as facilitate seamless movements between them. Additionally, you can sell products from multiple warehouses as individual businesses.",
       contentAr:
         "Inventory With our platform, you can easily manage and create multiple warehouses, as well as facilitate seamless movements between them. Additionally, you can sell products from multiple warehouses as individual businesses. Ar",
+      img: purchasesTabImg,
+    },
+  ],
+  about_us_tabs: [
+    {
+      labelEn: "Invoices",
+      labelAr: "Invoices Ar",
+      contentEn: "Invoices - Purchasing Management - Supplier Management",
+      contentAr: "Invoices - Purchasing Management - Supplier Management Ar",
+      img: purchasesTabImg,
+    },
+    {
+      labelEn: "Purchases",
+      labelAr: "Purchases Ar",
+      contentEn: "Purchasing Management - Supplier Management",
+      contentAr: "Purchasing Management - Supplier Management Ar",
+      img: purchasesTabImg,
+    },
+    {
+      labelEn: "Accounts",
+      labelAr: "Accounts Ar",
+      contentEn: "Accounts Purchasing Management - Supplier Management",
+      contentAr: "Accounts Purchasing Management - Supplier Management Ar",
+      img: purchasesTabImg,
+    },
+    {
+      labelEn: "Inventory",
+      labelAr: "Inventory Ar",
+      contentEn: "Inventory Purchasing Management - Supplier Management",
+      contentAr: "Inventory Purchasing Management - Supplier Management Ar",
+      img: purchasesTabImg,
+    },
+    {
+      labelEn: "Safety",
+      labelAr: "Safety Ar",
+      contentEn: "Safety Purchasing Management - Supplier Management",
+      contentAr: "Safety Purchasing Management - Supplier Management Ar",
       img: purchasesTabImg,
     },
   ],

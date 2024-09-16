@@ -34,7 +34,7 @@ const AccordionTabs = ({ tabs }) => {
           <div className="text-2xl font-normal text-theme-blue">
             <img
               src={tabs[activeTab].img}
-              className="h-52 rounded-bl-xl rounded-br-[4rem] rounded-tl-[4rem] rounded-tr-xl"
+              className="h-52 rounded-3xl"
               alt="Tab image"
             />
           </div>
