@@ -19,7 +19,7 @@ const Features = () => {
         image={contactHeader}
       />
       <Section>
-        <TabComponent tabs={tabs} />
+        <TabComponent tabs={tabs.features_tabs} />
       </Section>
       <Section>
         <AccordionItems accordionItems={FeaturesAccordionItems} tabs={tabs} />

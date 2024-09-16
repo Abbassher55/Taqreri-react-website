@@ -18,7 +18,10 @@ const Modules = () => {
         image={modulesHeader}
       />
       <Section>
-        <AccordionItems accordionItems={ModulesAccordionItems} tabs={tabs} />
+        <AccordionItems
+          accordionItems={ModulesAccordionItems}
+          tabs={tabs["modules_tabs"]}
+        />
       </Section>
     </>
   );

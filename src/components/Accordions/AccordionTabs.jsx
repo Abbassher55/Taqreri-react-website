@@ -1,7 +1,7 @@
 import React, { useState, useContext } from "react";
-import { LanguageContext } from "../lang/LanguageContext";
+import { LanguageContext } from "../../lang/LanguageContext";
 
-const TabComponent = ({ tabs }) => {
+const AccordionTabs = ({ tabs }) => {
   const [activeTab, setActiveTab] = useState(0);
   const { language } = useContext(LanguageContext);
 
@@ -12,7 +12,7 @@ const TabComponent = ({ tabs }) => {
           <button
             key={index}
             onClick={() => setActiveTab(index)}
-            className={`w-full px-4 py-2 text-2xl font-bold capitalize text-theme-blue ${
+            className={`w-full text-nowrap px-4 py-2 text-lg font-bold capitalize text-theme-blue ${
               activeTab === index
                 ? "rounded-full bg-theme-yellow"
                 : "text-gray-700"
@@ -24,7 +24,7 @@ const TabComponent = ({ tabs }) => {
       </div>
       <div className="flex flex-col items-center justify-between gap-3 p-5 md:flex-row">
         <div className="md:w-1/2">
-          <div className="text-2xl font-medium text-theme-blue md:w-3/4">
+          <div className="text-lg font-medium text-white">
             {language === "en"
               ? tabs[activeTab].contentEn
               : tabs[activeTab].contentAr}
@@ -44,4 +44,4 @@ const TabComponent = ({ tabs }) => {
   );
 };
 
-export default TabComponent;
+export default AccordionTabs;

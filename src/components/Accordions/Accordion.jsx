@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import AccordionSingleItem from "./AccordionSingleItem";
-import TabComponent from "../TabComponent";
+import AccordionTabs from "./AccordionTabs";
 
 const Accordion = ({ items, tabs }) => {
   const [openIndex, setOpenIndex] = useState(null);
@@ -25,7 +25,7 @@ const Accordion = ({ items, tabs }) => {
           isLast={index === items.length - 1}
           innerContent={item.haveDesc}
         >
-          <TabComponent tabs={tabs} />
+          <AccordionTabs tabs={tabs} />
         </AccordionSingleItem>
       ))}
     </div>

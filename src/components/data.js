@@ -16,6 +16,7 @@ import carServices from "../assets/imgs/car-services.png";
 import featureImg1 from "../assets/imgs/accordion-item-1.png";
 import techSupportIcon from "../assets/imgs/tech-support-icon.png";
 import backupIcon from "../assets/imgs/auto-backup-icon.png";
+import purchasesTabImg from "../assets/imgs/purchases-tab-img.png";
 export const whyTaqreri = [
   {
     key: "secureData",
@@ -188,13 +189,80 @@ export const ModulesAccordionItems = [
     haveDesc: true,
   },
 ];
-export const tabs = [
-  { label: "invoices", content: "Content for Tab invoices" },
-  {
-    label: "Purchases",
-    content: "Purchasing Management - Supplier Management",
-  },
-  { label: "Tab 3", content: "Content for Tab 3" },
-  { label: "Tab 4", content: "Content for Tab 4" },
-  { label: "Tab 5", content: "Content for Tab 5" },
-];
+export const tabs = {
+  features_tabs: [
+    {
+      labelEn: "Invoices",
+      labelAr: "Invoices Ar",
+      contentEn: "Invoices - Purchasing Management - Supplier Management",
+      contentAr: "Invoices - Purchasing Management - Supplier Management Ar",
+      img: purchasesTabImg,
+    },
+    {
+      labelEn: "Purchases",
+      labelAr: "Purchases Ar",
+      contentEn: "Purchasing Management - Supplier Management",
+      contentAr: "Purchasing Management - Supplier Management Ar",
+      img: purchasesTabImg,
+    },
+    {
+      labelEn: "Accounts",
+      labelAr: "Accounts Ar",
+      contentEn: "Accounts Purchasing Management - Supplier Management",
+      contentAr: "Accounts Purchasing Management - Supplier Management Ar",
+      img: purchasesTabImg,
+    },
+    {
+      labelEn: "Inventory",
+      labelAr: "Inventory Ar",
+      contentEn: "Inventory Purchasing Management - Supplier Management",
+      contentAr: "Inventory Purchasing Management - Supplier Management Ar",
+      img: purchasesTabImg,
+    },
+    {
+      labelEn: "Safety",
+      labelAr: "Safety Ar",
+      contentEn: "Safety Purchasing Management - Supplier Management",
+      contentAr: "Safety Purchasing Management - Supplier Management Ar",
+      img: purchasesTabImg,
+    },
+  ],
+  modules_tabs: [
+    {
+      labelEn: "Inventory",
+      labelAr: "Inventory Ar",
+      contentEn:
+        "With our platform, you can easily manage and create multiple warehouses, as well as facilitate seamless movements between them. Additionally, you can sell products from multiple warehouses as individual businesses.",
+      contentAr:
+        "With our platform, you can easily manage and create multiple warehouses, as well as facilitate seamless movements between them. Additionally, you can sell products from multiple warehouses as individual businesses. Ar",
+      img: purchasesTabImg,
+    },
+    {
+      labelEn: "warehouse",
+      labelAr: "warehouse Ar",
+      contentEn:
+        "With our platform, you can easily manage and create multiple warehouses, as well as facilitate seamless movements between them. Additionally, you can sell products from multiple warehouses as individual businesses.",
+      contentAr:
+        "With our platform, you can easily manage and create multiple warehouses, as well as facilitate seamless movements between them. Additionally, you can sell products from multiple warehouses as individual businesses. Ar",
+      img: purchasesTabImg,
+    },
+    {
+      labelEn: "Suppliers",
+      labelAr: "Suppliers Ar",
+      contentEn:
+        "Accounts With our platform, you can easily manage and create multiple warehouses, as well as facilitate seamless movements between them. Additionally, you can sell products from multiple warehouses as individual businesses.",
+      contentAr:
+        "Accounts With our platform, you can easily manage and create multiple warehouses, as well as facilitate seamless movements between them. Additionally, you can sell products from multiple warehouses as individual businesses. Ar",
+      img: purchasesTabImg,
+    },
+    {
+      labelEn: "Factory & production",
+      labelAr: "Factory & production Ar",
+      contentEn:
+        "Inventory With our platform, you can easily manage and create multiple warehouses, as well as facilitate seamless movements between them. Additionally, you can sell products from multiple warehouses as individual businesses.",
+      contentAr:
+        "Inventory With our platform, you can easily manage and create multiple warehouses, as well as facilitate seamless movements between them. Additionally, you can sell products from multiple warehouses as individual businesses. Ar",
+      img: purchasesTabImg,
+    },
+  ],
+};

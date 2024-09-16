@@ -40,14 +40,14 @@ const Footer = () => {
           <form action="">
             <div className="mt-4 flex flex-col">
               <label
-                htmlFor="email"
+                htmlFor="footer_email"
                 className="my-3 font-bold capitalize text-gray-400"
               >
                 {content.email}:
               </label>
               <input
                 type="email"
-                id="email"
+                id="footer_email"
                 className="bg-footer-input p-2 text-theme-blue shadow-lg focus:border-theme-blue focus:shadow-xl focus:outline-none ltr:rounded-r-full rtl:rounded-l-full"
               />
             </div>
@@ -82,8 +82,11 @@ const Footer = () => {
               {content.contact_with}
             </h3>
             <div className="mt-5 flex flex-col space-y-5 md:mt-10 md:space-y-9">
-              {footerLinks.map((link) => (
-                <div className="flex gap-4 rounded-2xl bg-theme-yellow p-2 font-bold text-white md:px-3 md:py-3">
+              {footerLinks.map((link, index) => (
+                <div
+                  key={index}
+                  className="flex gap-4 rounded-2xl bg-theme-yellow p-2 font-bold text-white md:px-3 md:py-3"
+                >
                   <span className="relative font-bold before:absolute before:-bottom-6 before:h-10 before:w-[1px] before:rotate-45 before:bg-theme-blue after:absolute after:-top-5 after:h-10 after:w-[1px] after:rotate-[135deg] after:bg-theme-blue ltr:pr-3 ltr:before:right-0 ltr:after:right-0 rtl:pl-3 rtl:before:left-0 rtl:before:right-auto rtl:before:rotate-[135deg] rtl:after:left-0 rtl:after:right-auto rtl:after:rotate-45">
                     <img
                       src={link.icon}
