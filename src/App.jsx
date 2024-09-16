@@ -35,15 +35,9 @@ const App = () => {
     <LanguageProvider>
       <Router>
         <div className="container flex flex-col gap-3 p-0 pb-0 md:px-2 md:pt-2 lg:flex-row lg:px-3 lg:pt-3">
-          <motion.div
-            ref={topBarRef}
-            initial="hidden"
-            animate={topBarInView ? "visible" : "hidden"}
-            variants={zoomInVariants}
-            className="block lg:hidden"
-          >
+          <div className="block lg:hidden">
             <TopBar togglerFunction={toggleNavbar} />
-          </motion.div>
+          </div>
           <Navbar navbarToggler={openNavbar} setNavbar={setNavbar} />
           <div className="lg:w-10/12">
             <motion.div
