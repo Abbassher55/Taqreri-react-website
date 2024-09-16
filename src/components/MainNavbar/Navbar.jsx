@@ -2,7 +2,7 @@ import { NavLink, useLocation } from "react-router-dom";
 import React, { useContext, useState } from "react";
 import LanguageToggle from "./LanguageToggle";
 import { LanguageContext } from "../../lang/LanguageContext";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 
 const container = {
   hidden: { opacity: 1, scale: 0 },
@@ -15,7 +15,10 @@ const container = {
     },
   },
 };
-
+const inputVariants = {
+  hidden: { opacity: 0, y: -20 },
+  visible: { opacity: 1, y: 0 },
+};
 const item = {
   hidden: { y: 20, opacity: 0 },
   visible: {
@@ -29,7 +32,7 @@ const Navbar = ({ navbarToggler, setNavbar }) => {
   const [showForm, setShowForm] = useState(false);
 
   function openForm() {
-    setShowForm(!showForm);
+    setShowForm((prev) => !prev);
   }
   function closeNavbarOnMobile() {
     if (window.innerWidth < 992) {
@@ -65,45 +68,79 @@ const Navbar = ({ navbarToggler, setNavbar }) => {
         </span>
         <span>{content.login}</span>
       </button>
-      <div
-        className={`login-form relative mt-4 bg-theme-cream p-6 before:absolute before:-top-2 before:left-1/2 before:size-4 before:-translate-x-1/2 before:rotate-45 before:bg-theme-cream ${showForm ? "block" : "hidden"}`}
-      >
-        <form action="" className="space-y-4">
-          <div>
-            <label htmlFor="email" className="capitalize text-theme-blue">
-              {content.email}:
-            </label>
-            <input
-              type="email"
-              id="email"
-              className="mx-auto mt-1 block w-full rounded-full bg-white p-2 text-theme-blue shadow-lg focus:border focus:border-theme-blue focus:shadow-xl focus:outline-none"
-            />
-          </div>
-          <div>
-            <label htmlFor="password" className="capitalize text-theme-blue">
-              {content.password}:
-            </label>
-            <input
-              type="password"
-              id="password"
-              className="mx-auto mt-1 block w-full rounded-full bg-white p-2 text-theme-blue shadow-lg focus:border focus:border-theme-blue focus:shadow-xl focus:outline-none"
-            />
-          </div>
-          <div className="text-end">
-            <a
-              href="#"
-              className="text-xs font-bold capitalize text-theme-blue"
-            >
-              {content.forgot_password}
-            </a>
-          </div>
-          <div>
-            <button className="mx-auto flex items-center gap-x-1 rounded-full bg-theme-yellow px-5 py-1 text-xl font-bold text-theme-blue transition-all duration-150 hover:bg-theme-light-white">
-              {content.login}
-            </button>
-          </div>
-        </form>
-      </div>
+
+      <AnimatePresence>
+        {showForm && (
+          <motion.div
+            className="login-form relative mt-4 bg-theme-cream p-6 before:absolute before:-top-2 before:left-1/2 before:size-4 before:-translate-x-1/2 before:rotate-45 before:bg-theme-cream"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }} // Fade out when closing
+            transition={{ duration: 0.3 }} // Set the duration for the fade animation
+          >
+            <form action="/login" method="POST" className="space-y-4">
+              <motion.div
+                variants={inputVariants}
+                initial="hidden"
+                animate="visible"
+                exit="hidden"
+                transition={{ duration: 0.3 }} // Duration for the fade and slide in effect
+              >
+                <label htmlFor="email" className="capitalize text-theme-blue">
+                  {content.email}:
+                </label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  className="mx-auto mt-1 block w-full rounded-full bg-white p-2 text-theme-blue shadow-lg focus:border focus:border-theme-blue focus:shadow-xl focus:outline-none"
+                  required
+                />
+              </motion.div>
+
+              <motion.div
+                variants={inputVariants}
+                initial="hidden"
+                animate="visible"
+                exit="hidden"
+                transition={{ duration: 0.3, delay: 0.1 }} // Staggered effect with delay
+              >
+                <label
+                  htmlFor="password"
+                  className="capitalize text-theme-blue"
+                >
+                  {content.password}:
+                </label>
+                <input
+                  type="password"
+                  id="password"
+                  name="password"
+                  className="mx-auto mt-1 block w-full rounded-full bg-white p-2 text-theme-blue shadow-lg focus:border focus:border-theme-blue focus:shadow-xl focus:outline-none"
+                  required
+                />
+              </motion.div>
+
+              <div className="text-end">
+                <a
+                  href="#"
+                  className="text-xs font-bold capitalize text-theme-blue"
+                >
+                  {content.forgot_password}
+                </a>
+              </div>
+
+              <div>
+                <button
+                  type="submit"
+                  className="mx-auto flex items-center gap-x-1 rounded-full bg-theme-yellow px-5 py-1 text-xl font-bold text-theme-blue transition-all duration-150 hover:bg-theme-light-white"
+                >
+                  {content.login}
+                </button>
+              </div>
+            </form>
+          </motion.div>
+        )}
+      </AnimatePresence>
       <div className="mt-3 flex flex-col space-y-8">
         <LanguageToggle />
         <motion.ul
