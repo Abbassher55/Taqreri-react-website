@@ -136,98 +136,98 @@ export const effectiveCardsContent = [
 export const FeaturesAccordionItems = [
   {
     titleEn: "Technical Support 24/7",
-    titleAr: "Technical Support 24/7 Ar",
+    titleAr: "الدعم الفني 24/7",
     accordionImg: featureImg1,
     descEn: "Technical Support 24/7.",
-    descAr: "Technical Support 24/7. Ar",
+    descAr: "الدعم الفني 24/7",
     haveDesc: true,
   },
   {
     titleEn: "Technical Support",
-    titleAr: "Technical Support Ar",
+    titleAr: "الدعم الفني",
     accordionImg: techSupportIcon,
     descEn: "Technical Support",
-    descAr: "Technical Support Ar",
+    descAr: "الدعم الفني 24/7",
     haveDesc: true,
   },
   {
     titleEn: "Auto backup",
-    titleAr: "Auto backup Ar",
+    titleAr: "النسخ الاحتياطي التلقائي",
     accordionImg: backupIcon,
     descEn:
       "Taqreri offers an automatic backup feature that securely stores all your data on our servers. This ensures that your information and operations are always protected, and can be easily retrieved whenever you need them.",
     descAr:
-      "Taqreri offers an automatic backup feature that securely stores all your data on our servers. This ensures that your information and operations are always protected, and can be easily retrieved whenever you need them.Ar",
+      "يقدم تقري ميزة النسخ الاحتياطي التلقائي التي تقوم بتخزين جميع بياناتك بشكل آمن على خوادمنا. وهذا يضمن حماية معلوماتك وعملياتك دائمًا، ويمكن استرجاعها بسهولة عندما تحتاج إليها.",
     haveDesc: true,
   },
 ];
 export const AboutUsAccordionItems = [
   {
     titleEn: "Quality",
-    titleAr: "Quality Ar",
+    titleAr: "جودة",
     accordionImg: featureImg1,
     descEn:
       "In our opinion, success of the product is defined by its quality. Therefore, we strive to be the best in our field.",
     descAr:
-      "In our opinion, success of the product is defined by its quality. Therefore, we strive to be the best in our field. Ar",
+      "في رأينا، يتم تحديد نجاح المنتج من خلال جودته. ولذلك نسعى جاهدين لنكون الأفضل في مجالنا.",
     haveDesc: true,
   },
   {
     titleEn: "Experience",
-    titleAr: "Experience Ar",
+    titleAr: "خبرة",
     accordionImg: techSupportIcon,
     descEn:
       "In our opinion, success of the product is defined by its quality. Therefore, we strive to be the best in our field.",
     descAr:
-      "In our opinion, success of the product is defined by its quality. Therefore, we strive to be the best in our field. Ar",
+      "في رأينا، يتم تحديد نجاح المنتج من خلال جودته. ولذلك نسعى جاهدين لنكون الأفضل في مجالنا.",
     haveDesc: true,
   },
   {
     titleEn: "Customer Satisfaction",
-    titleAr: "Customer Satisfaction Ar",
+    titleAr: "رضا العملاء",
     accordionImg: techSupportIcon,
     descEn:
       "In our opinion, success of the product is defined by its quality. Therefore, we strive to be the best in our field.",
     descAr:
-      "In our opinion, success of the product is defined by its quality. Therefore, we strive to be the best in our field. Ar",
+      "في رأينا، يتم تحديد نجاح المنتج من خلال جودته. ولذلك نسعى جاهدين لنكون الأفضل في مجالنا.",
     haveDesc: true,
   },
 ];
 export const ModulesAccordionItems = [
   {
     titleEn: "Sales & marketing",
-    titleAr: "Sales & marketing Ar",
+    titleAr: "المبيعات والتسويق",
     accordionImg: featureImg1,
     descEn: "This is the content of the first accordion item.",
-    descAr: "This is the content of the first accordion item. Ar",
+    descAr: "هذا هو محتوى عنصر الأكورديون الأول.",
     haveDesc: true,
   },
   {
     titleEn: "Purchases & inventory",
-    titleAr: "Purchases & inventory Ar",
+    titleAr: "المشتريات والمخزون",
     accordionImg: techSupportIcon,
     descEn: "This is the content of the first accordion item.",
-    descAr: "This is the content of the first accordion item. Ar",
+    descAr: "هذا هو محتوى عنصر الأكورديون الأول.",
     haveDesc: false,
   },
   {
     titleEn: "Financial Accounting",
-    titleAr: "Financial Accounting Ar",
+    titleAr: "المحاسبة المالية",
     accordionImg: backupIcon,
     descEn:
       "Taqreri offers an automatic backup feature that securely stores all your data on our servers. This ensures that your information and operations are always protected, and can be easily retrieved whenever you need them.",
     descAr:
-      "Taqreri offers an automatic backup feature that securely stores all your data on our servers. This ensures that your information and operations are always protected, and can be easily retrieved whenever you need them.Ar",
+      "يقدم تقري ميزة النسخ الاحتياطي التلقائي التي تقوم بتخزين جميع بياناتك بشكل آمن على خوادمنا. وهذا يضمن حماية معلوماتك وعملياتك دائمًا، ويمكن استرجاعها بسهولة عندما تحتاج إليها.",
     haveDesc: true,
   },
   {
     titleEn: "Human Resources",
-    titleAr: "Human Resources Ar",
+    titleAr: "الموارد البشرية",
     accordionImg: backupIcon,
     descEn:
       "Taqreri offers an automatic backup feature that securely stores all your data on our servers. This ensures that your information and operations are always protected, and can be easily retrieved whenever you need them.",
     descAr:
-      "Taqreri offers an automatic backup feature that securely stores all your data on our servers. This ensures that your information and operations are always protected, and can be easily retrieved whenever you need them.Ar",
+      "يقدم تقري ميزة النسخ الاحتياطي التلقائي التي تقوم بتخزين جميع بياناتك بشكل آمن على خوادمنا. وهذا يضمن حماية معلوماتك وعملياتك دائمًا، ويمكن استرجاعها بسهولة عندما تحتاج إليها.",
     haveDesc: true,
   },
 ];
@@ -235,37 +235,37 @@ export const tabs = {
   features_tabs: [
     {
       labelEn: "Invoices",
-      labelAr: "Invoices Ar",
+      labelAr: "الفواتير",
       contentEn: "Invoices - Purchasing Management - Supplier Management",
-      contentAr: "Invoices - Purchasing Management - Supplier Management Ar",
+      contentAr: "الفواتير - إدارة المشتريات - إدارة الموردين",
       img: purchasesTabImg,
     },
     {
       labelEn: "Purchases",
-      labelAr: "Purchases Ar",
+      labelAr: "المشتريات",
       contentEn: "Purchasing Management - Supplier Management",
-      contentAr: "Purchasing Management - Supplier Management Ar",
+      contentAr: "إدارة المشتريات - إدارة الموردين",
       img: purchasesTabImg,
     },
     {
       labelEn: "Accounts",
-      labelAr: "Accounts Ar",
+      labelAr: "الحسابات",
       contentEn: "Accounts Purchasing Management - Supplier Management",
-      contentAr: "Accounts Purchasing Management - Supplier Management Ar",
+      contentAr: "Accounts إدارة المشتريات - إدارة الموردين",
       img: purchasesTabImg,
     },
     {
       labelEn: "Inventory",
-      labelAr: "Inventory Ar",
+      labelAr: "جرد",
       contentEn: "Inventory Purchasing Management - Supplier Management",
-      contentAr: "Inventory Purchasing Management - Supplier Management Ar",
+      contentAr: "Inventory إدارة المشتريات - إدارة الموردين",
       img: purchasesTabImg,
     },
     {
       labelEn: "Safety",
-      labelAr: "Safety Ar",
+      labelAr: "أمان",
       contentEn: "Safety Purchasing Management - Supplier Management",
-      contentAr: "Safety Purchasing Management - Supplier Management Ar",
+      contentAr: "Safety إدارة المشتريات - إدارة الموردين",
       img: purchasesTabImg,
     },
   ],
@@ -273,75 +273,75 @@ export const tabs = {
   modules_tabs: [
     {
       labelEn: "Inventory",
-      labelAr: "Inventory Ar",
+      labelAr: "جرد",
       contentEn:
         "With our platform, you can easily manage and create multiple warehouses, as well as facilitate seamless movements between them. Additionally, you can sell products from multiple warehouses as individual businesses.",
       contentAr:
-        "With our platform, you can easily manage and create multiple warehouses, as well as facilitate seamless movements between them. Additionally, you can sell products from multiple warehouses as individual businesses. Ar",
+        "من خلال منصتنا، يمكنك بسهولة إدارة وإنشاء مستودعات متعددة، بالإضافة إلى تسهيل التنقلات السلسة بينها. بالإضافة إلى ذلك، يمكنك بيع المنتجات من مستودعات متعددة كأعمال تجارية فردية.",
       img: purchasesTabImg,
     },
     {
       labelEn: "warehouse",
-      labelAr: "warehouse Ar",
+      labelAr: "مستودع",
       contentEn:
         "With our platform, you can easily manage and create multiple warehouses, as well as facilitate seamless movements between them. Additionally, you can sell products from multiple warehouses as individual businesses.",
       contentAr:
-        "With our platform, you can easily manage and create multiple warehouses, as well as facilitate seamless movements between them. Additionally, you can sell products from multiple warehouses as individual businesses. Ar",
+        "من خلال منصتنا، يمكنك بسهولة إدارة وإنشاء مستودعات متعددة، بالإضافة إلى تسهيل التنقلات السلسة بينها. بالإضافة إلى ذلك، يمكنك بيع المنتجات من مستودعات متعددة كأعمال تجارية فردية.",
       img: purchasesTabImg,
     },
     {
       labelEn: "Suppliers",
-      labelAr: "Suppliers Ar",
+      labelAr: "الموردين",
       contentEn:
         "Accounts With our platform, you can easily manage and create multiple warehouses, as well as facilitate seamless movements between them. Additionally, you can sell products from multiple warehouses as individual businesses.",
       contentAr:
-        "Accounts With our platform, you can easily manage and create multiple warehouses, as well as facilitate seamless movements between them. Additionally, you can sell products from multiple warehouses as individual businesses. Ar",
+        "Accounts من خلال منصتنا، يمكنك بسهولة إدارة وإنشاء مستودعات متعددة، بالإضافة إلى تسهيل التنقلات السلسة بينها. بالإضافة إلى ذلك، يمكنك بيع المنتجات من مستودعات متعددة كأعمال تجارية فردية.",
       img: purchasesTabImg,
     },
     {
       labelEn: "Factory & production",
-      labelAr: "Factory & production Ar",
+      labelAr: "المصنع والإنتاج",
       contentEn:
         "Inventory With our platform, you can easily manage and create multiple warehouses, as well as facilitate seamless movements between them. Additionally, you can sell products from multiple warehouses as individual businesses.",
       contentAr:
-        "Inventory With our platform, you can easily manage and create multiple warehouses, as well as facilitate seamless movements between them. Additionally, you can sell products from multiple warehouses as individual businesses. Ar",
+        "Inventory من خلال منصتنا، يمكنك بسهولة إدارة وإنشاء مستودعات متعددة، بالإضافة إلى تسهيل التنقلات السلسة بينها. بالإضافة إلى ذلك، يمكنك بيع المنتجات من مستودعات متعددة كأعمال تجارية فردية.",
       img: purchasesTabImg,
     },
   ],
   about_us_tabs: [
     {
       labelEn: "Invoices",
-      labelAr: "Invoices Ar",
+      labelAr: "الفواتير",
       contentEn: "Invoices - Purchasing Management - Supplier Management",
-      contentAr: "Invoices - Purchasing Management - Supplier Management Ar",
+      contentAr: "الفواتير - إدارة المشتريات - إدارة الموردين",
       img: purchasesTabImg,
     },
     {
       labelEn: "Purchases",
-      labelAr: "Purchases Ar",
+      labelAr: "المشتريات",
       contentEn: "Purchasing Management - Supplier Management",
-      contentAr: "Purchasing Management - Supplier Management Ar",
+      contentAr: "إدارة المشتريات - إدارة الموردين",
       img: purchasesTabImg,
     },
     {
       labelEn: "Accounts",
-      labelAr: "Accounts Ar",
+      labelAr: "الحسابات",
       contentEn: "Accounts Purchasing Management - Supplier Management",
-      contentAr: "Accounts Purchasing Management - Supplier Management Ar",
+      contentAr: "Accounts إدارة المشتريات - إدارة الموردين",
       img: purchasesTabImg,
     },
     {
       labelEn: "Inventory",
-      labelAr: "Inventory Ar",
+      labelAr: "جرد",
       contentEn: "Inventory Purchasing Management - Supplier Management",
-      contentAr: "Inventory Purchasing Management - Supplier Management Ar",
+      contentAr: "Inventory إدارة المشتريات - إدارة الموردين",
       img: purchasesTabImg,
     },
     {
       labelEn: "Safety",
-      labelAr: "Safety Ar",
+      labelAr: "أمان",
       contentEn: "Safety Purchasing Management - Supplier Management",
-      contentAr: "Safety Purchasing Management - Supplier Management Ar",
+      contentAr: "Safety إدارة المشتريات - إدارة الموردين",
       img: purchasesTabImg,
     },
   ],
